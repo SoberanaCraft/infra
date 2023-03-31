@@ -1,0 +1,17 @@
+{
+    "api": {
+        "endpoint": "api:8080",
+        "token": "",
+        "tls": false
+    },
+    "server": {
+        "name": "dev",
+        "versions": [
+        ],
+        "ip": "localhost:25565",
+        "modded": false,
+        "modpackUrl": "",
+        "platform": "Java",
+        "modloader": "quilt"
+    }
+}
