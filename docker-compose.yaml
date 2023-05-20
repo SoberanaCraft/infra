@@ -60,6 +60,8 @@ services:
     stdin_open: true
     ports:
         - "24454:24454/udp"
+        - "25565:25565/udp"
+        - "19132:19132/udp"
     volumes:
       - './config/survival/config:/config'
       - './config/survival/mods:/mods'
