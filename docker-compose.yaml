@@ -55,6 +55,7 @@ services:
       ONLINE_MODE: 'FALSE'
       TYPE: QUILT
       PACKWIZ_URL: 'https://soberanacraft.github.io/soberana-server-mods/pack.toml'
+      VANILLATWEAKS_FILE: '/config/vt/datapacks.json'
     tty: true
     stdin_open: true
     ports:
@@ -62,5 +63,6 @@ services:
     volumes:
       - './config/survival/config:/config'
       - './config/survival/mods:/mods'
+      - './config/vt:/config/vt'
     links:
         - api
