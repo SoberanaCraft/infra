@@ -54,7 +54,7 @@ services:
       USE_AIKAR_FLAGS: true
       ONLINE_MODE: 'FALSE'
       TYPE: QUILT
-      PACKWIZ_URL: 'https://soberanacraft.github.io/soberana-server-mods/pack.toml'
+      PACKWIZ_URL: 'https://blocovermelho.github.io/server-mods/pack.toml'
       VANILLATWEAKS_FILE: '/config/vt/datapacks.json'
     tty: true
     stdin_open: true
