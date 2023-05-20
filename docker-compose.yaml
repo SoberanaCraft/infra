@@ -62,6 +62,7 @@ services:
       ONLINE_MODE: 'FALSE'
       TYPE: QUILT
       PACKWIZ_URL: 'https://blocovermelho.github.io/server-mods/pack.toml'
+      VANILLATWEAKS_FILE: '/config/vt/datapacks.json'
       SEED: 1921066967051512694
       DIFFICULTY: 'hard'
       SPAWN_PROTECTION: 0
@@ -69,10 +70,12 @@ services:
     stdin_open: true
     ports:
         - "24454:24454/udp"
+        - "25565:25565/udp"
+        - "19132:19132/udp"
     volumes:
       - './config/survival/config:/config'
-#      - './config/survival/mods:/mods'
       - '/world-data/season2:/data'
+      - './config/vt:/config/vt'
     links:
         - api
     restart: unless-stopped
